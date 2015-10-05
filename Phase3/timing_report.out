@@ -1,0 +1,82 @@
+Loading verilog file '/home/scf-12/cma290/sta/designs/ddr2_controller.syn.v'
+Warning: Design 'ddr2_init_engine' (file '/home/scf-12/cma290/sta/designs/ddr2_controller.syn.v')
+	is already registered. Remove the design before rereading. (DBR-003)
+Unlinking design ddr2_init_engine...
+Warning: All timing information (backannotation, exceptions, etc.)
+	is being removed from design 'ddr2_init_engine'.   User-created annotations
+	must be restored after relinking this design. (LNK-024)
+Linking design ddr2_init_engine...
+Information: Issuing set_operating_conditions for setting analysis mode on_chip_variation. (PTE-037)
+set_operating_conditions -analysis_type on_chip_variation  -library [get_libs {osu018_stdcells.db:osu018_stdcells}] 
+
+Designs used to link ddr2_init_engine:
+  ddr2_init_engine_DW01_inc_0
+
+Libraries used to link ddr2_init_engine:
+  osu018_stdcells
+
+Design 'ddr2_init_engine' was successfully linked.
+Removing 65 unneeded designs.....
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+Design : ddr2_init_engine
+Version: Z-2006.12-SP1
+Date   : Wed Apr 16 15:52:32 2014
+****************************************
+
+
+  Startpoint: counter_reg_1_
+               (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: counter_reg_16_
+               (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  counter_reg_1_/CLK (DFFPOSX1)                           0.00       0.50 r
+  counter_reg_1_/Q (DFFPOSX1)                             0.20       0.70 f
+  add_103/A[1] (ddr2_init_engine_DW01_inc_0)              0.00       0.70 f
+  add_103/U1_1_1/YC (HAX1)                                0.15       0.85 f
+  add_103/U1_1_2/YC (HAX1)                                0.13       0.98 f
+  add_103/U1_1_3/YC (HAX1)                                0.13       1.11 f
+  add_103/U1_1_4/YC (HAX1)                                0.13       1.24 f
+  add_103/U1_1_5/YC (HAX1)                                0.13       1.37 f
+  add_103/U1_1_6/YC (HAX1)                                0.13       1.50 f
+  add_103/U1_1_7/YC (HAX1)                                0.13       1.63 f
+  add_103/U1_1_8/YC (HAX1)                                0.13       1.76 f
+  add_103/U1_1_9/YC (HAX1)                                0.13       1.89 f
+  add_103/U1_1_10/YC (HAX1)                               0.13       2.03 f
+  add_103/U1_1_11/YC (HAX1)                               0.13       2.16 f
+  add_103/U1_1_12/YC (HAX1)                               0.13       2.29 f
+  add_103/U1_1_13/YC (HAX1)                               0.13       2.42 f
+  add_103/U1_1_14/YC (HAX1)                               0.13       2.55 f
+  add_103/U1_1_15/YC (HAX1)                               0.15       2.69 f
+  add_103/U1/Y (XOR2X1)                                   0.10       2.79 r
+  add_103/SUM[16] (ddr2_init_engine_DW01_inc_0)           0.00       2.79 r
+  U155/Y (NAND2X1)                                        0.05       2.84 f
+  U154/Y (OAI21X1)                                        0.06       2.90 r
+  counter_reg_16_/D (DFFPOSX1)                            0.00       2.90 r
+  data arrival time                                                  2.90
+
+  clock CLK (rise edge)                                   2.60       2.60
+  clock network delay (ideal)                             0.50       3.10
+  counter_reg_16_/CLK (DFFPOSX1)                                     3.10 r
+  library setup time                                     -0.19       2.91
+  data required time                                                 2.91
+  ------------------------------------------------------------------------------
+  data required time                                                 2.91
+  data arrival time                                                 -2.90
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

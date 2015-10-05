@@ -1,0 +1,54 @@
+<soma original.input.version="0.001">
+  <!--
+ ======================================================================
+ Copyright 1999-2008 by Denali Software, Inc.  All rights reserved.
+ ======================================================================
+ 
+ This SOMA file describes a memory model, using Denali Software's
+ proprietary SOMA language.  By using this SOMA file, you agree to the
+ following terms.  If you do not agree to these terms, you may not use
+ this SOMA file.
+ 
+ Subject to the restrictions set forth below, Denali Software grants
+ you a non-exclusive, non-transferable license only to use this SOMA
+ file to simulate the memory described in it using tools supplied by
+ Denali Software.
+ 
+ You may not:
+ 
+   (1)  Use this SOMA file to create software programs or tools that use
+        SOMA files as either input or output.
+ 
+   (2)  Modify this SOMA file or the SOMA language in any manner.
+ 
+   (3)  Use this SOMA file to create other languages for describing
+        memory models.
+ 
+   (4)  Distribute this SOMA file to others.
+ 
+ This SOMA file is based on information received by Denali Software
+ from third parties.  DENALI SOFTWARE PROVIDES THIS SOMA FILE "AS IS"
+ AND EXPRESSLY DISCLAIMS ALL REPRESENTATIONS, WARRANTIES AND
+ CONDITIONS, INCLUDING BUT NOT LIMITED TO WARRANTIES AND CONDITIONS OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+ NONINFRINGEMENT.  DENALI SOFTWARE'S AGGREGATE LIABILITY ARISING FROM
+ YOUR USE OF THIS SOMA FILE IS LIMITED TO ONE U.S. DOLLAR.
+ 
+ If you have any questions or if you would like to inquire about
+ obtaining additional or different rights in SOMA files or the SOMA
+ language, please contact Denali Software, at www.denali.com or at
+ info@denalisoft.com.
+
+************************************************************************
+ Manufacturer    : MICRON
+ Memory Class    : DDR_II
+ Part Name       : mt47h32m16-37e
+ Revision        : Mon Jun 30 14:38:15 2008
+ Description     : 512Mb DDR-II SDRAM
+ Datasheet URL   : http://download.micron.com/pdf/datasheets/dram/ddr2/512MbDDR2.pdf
+ Datasheet Info  : Rev. C, 4/08
+ Author Name     : Denali Software DS, KK, Ist
+ Author Comment  : 
+************************************************************************-->
+  <part ccontent="eLuFcQn1rZrrbuo4EIBfBfEABcKtlXKQTktXqgRql1bqT2Rip8niOMF2Cj1PvzYpxA7NhnG2f6jTfDPjuflC/SBImSRMznyRJwniXzM/oEiIGcZ8/fTk94qR3zv/OcxZIOOUIRpLPSxEdxhKyK9ukNI8Ye8xllF35n8impPZoO/3it/83vfbVYzlyT1iW3FmRo0IymX6wkkQIf5BXmIGUceJIPI5wE9JRjBhAVmQT0LPEsaNAmSaLZQjLRlnfNKIb1Ip06RewqBRQohiqkb3R0H1M7la0Fua1UtpnlAuVFLNn5ZLThCdI4nsDGiOphURdGHBLTgiyPKnU0jQ/xCSy6m4hOQHKc0zUjW1IqFybPTwFdByJs3lId9XVnUt0QEQCYRxLONPskCqrwRfJtxsdGok4W/8Ty5kopoTwHbC0IaSByS+1Xst2CEgaFV21IIdt7B5Ambvcy7kgrAPGd0CjGbxRsGvZJerAMWILlMMqZbUSG23QCdcDFdKfcwJBnCM7IuyokRrRHopA9i9mv/9KvIsS7kEqX2ev11i16aGglcE4YeIBFtwfBX8zmNJbLpZNS98+7hcvXqQSkCUpnudDb/lfLF4PNoAUSvluJ9GyauDt9RUn8PwUeWjbp8oxC+Exync32U5TQHuPq5hf6ndEaQMsFw8v29G2sv/iamt22mLpYOYC8L1cBZs/d554G9iKTR+/PR7CrLJNbPZDeIQnNg0AbCiolqAVHNU4dUDmO1VAQFQwJ7Y/J6A8A0y4Q26IL060gIvucGwDsQ7k8S7S3RSjwqbFdfbq162PaUe/OSqegGJRScQcs2rphePAJl2YT+vmUCtCFXTJq+GTWyvcqYqDmmnzxvVVjqYhCin8lf3i4juab7Fs+75RX2qO+3hYhaXy6nX73dyUbYV4/0fYWOhGHcYCPS6naKJYrXWpt1Or+a9obOGcms1vJnCYBSsE+Oo2L+B6l4nxnZ20AfSY8tyGK1NN3RDTVdJrK23Jj9yEmEZARQRRFUTbjsB3cIE2F7wgAJoWwtoSwtwZMDeFJYFWJiwBwxgnO0NfDiGGR79ObrumvLWr7ZIVvrHCtIADLcrlJ3pJCgsKvnlAb1ciLAm4CCimuXQWBcilBXXRFu9XK1rB33R9fqEVQVATSJyhxNeHiaA6D5T54NSMyit9pmQ1bYF1a4lWFk1gdvfMsiFiCuDHEdWj70DOSw2E2R0NwXB/HKmd7CJ8tNEzx3sZgCV0DbivH3EeWk/rIfuZYlOgf2Xl8fnMZA0ihO4NdPnS9PbIwfccPW0r35gEkLj1qAP9Rh2DRTPXMmDYEZ6gGGzjypXwTKbhOWN8qiTQDbR2LUFI3PbBiHR8XLz+zrpms6nzoAfTH+HMicUfZU+9kBaj0J2oo0MfZizu1gHBA8t+BZ6ymtFj1vQ9i4Z2DR3kfElpsrsDGT2xDE7FekeqUNmlDJwV3NA7juiQ6bYq/Z7lLboFjJzXov07MpwwjIh2JI3/RWaXYEj6LpAjIVhqo8jkGucEO2dE6q8sx/CHK7OX/oOLWlxz3IS0eIYh9IQWzZ4N8DdaiHBMAEsIdhOnd0/da/nJLXtBnZ9lLKK56B+YxW/gXmNv9BcGPOvncFpJIg8D9Qv5/9r+RcbKk98" />
+</soma>

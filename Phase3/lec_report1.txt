@@ -1,0 +1,62 @@
+SETUP> read design /home/scf-16/hongyinw/ee577b/syn1/src/ddr2_init_engine.v -Verilog -Golden   -sensitive        
+// Command: read design /home/scf-16/hongyinw/ee577b/syn1/src/ddr2_init_engine.v -Verilog -Golden   -sensitive        
+// Parsing file /home/scf-16/hongyinw/ee577b/syn1/src/ddr2_init_engine.v ...
+// Golden root module is set to 'ddr2_init_engine'
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:39)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:1)
+// Warning: (RTL5.3) Case expressions/items are resized (occurrence:6)
+// Note: (VLG9.2) `define macro is used (occurrence:32)
+// Note: Read VERILOG design successfully
+SETUP> read library -Revised   -sensitive    -Verilog /home/scf-22/ee577/design_pdk/osu_stdcells/lib/tsmc018/lib/osu018_stdcells.v
+// Command: read library -Revised   -sensitive    -Verilog /home/scf-22/ee577/design_pdk/osu_stdcells/lib/tsmc018/lib/osu018_stdcells.v
+// Parsing file /home/scf-22/ee577/design_pdk/osu_stdcells/lib/tsmc018/lib/osu018_stdcells.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:6)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:32)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:64)
+// Warning: (HRC3.8) Port positional association occurred in instantiation (occurrence:5)
+// Note: Read VERILOG library successfully
+SETUP> read design /home/scf-16/hongyinw/ee577b/syn1/netlist/ddr2_init_engine.syn.v -Verilog -Revised   -sensitive        
+// Command: read design /home/scf-16/hongyinw/ee577b/syn1/netlist/ddr2_init_engine.syn.v -Verilog -Revised   -sensitive        
+// Parsing file /home/scf-16/hongyinw/ee577b/syn1/netlist/ddr2_init_engine.syn.v ...
+// Revised root module is set to 'ddr2_init_engine'
+// Note: Read VERILOG design successfully
+SETUP> set system mode lec
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            4      22     42        68      
+--------------------------------------------------------------------------------
+Revised           4      22     42        68      
+================================================================================
+LEC> add compared points -all
+// Command: add compared points -all
+// 64 compared points added to compare list
+LEC> compare -NONEQ_Print
+// Command: compare -NONEQ_Print
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           22     42        64      
+================================================================================
+LEC> add compared points -all
+// Command: add compared points -all
+// Compare list already has 64 compared points
+// 0 compared points added to compare list
+LEC> compare -NONEQ_Print
+// Command: compare -NONEQ_Print
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           22     42        64      
+================================================================================
+
+

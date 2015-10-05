@@ -1,0 +1,67 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ddr2_controller' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ddr2_controller
+Version: Y-2006.06-SP4
+Date   : Fri Mar  7 14:54:01 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: XINIT/counter_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: XINIT/counter_reg[16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  XINIT/counter_reg[1]/CLK (DFFPOSX1)                     0.00 #     0.00 r
+  XINIT/counter_reg[1]/Q (DFFPOSX1)                       0.20       0.20 f
+  XINIT/add_103/A[1] (ddr2_init_engine_DW01_inc_0)        0.00       0.20 f
+  XINIT/add_103/U1_1_1/YC (HAX1)                          0.15       0.35 f
+  XINIT/add_103/U1_1_2/YC (HAX1)                          0.13       0.48 f
+  XINIT/add_103/U1_1_3/YC (HAX1)                          0.13       0.61 f
+  XINIT/add_103/U1_1_4/YC (HAX1)                          0.13       0.74 f
+  XINIT/add_103/U1_1_5/YC (HAX1)                          0.13       0.87 f
+  XINIT/add_103/U1_1_6/YC (HAX1)                          0.13       1.00 f
+  XINIT/add_103/U1_1_7/YC (HAX1)                          0.13       1.13 f
+  XINIT/add_103/U1_1_8/YC (HAX1)                          0.13       1.27 f
+  XINIT/add_103/U1_1_9/YC (HAX1)                          0.13       1.40 f
+  XINIT/add_103/U1_1_10/YC (HAX1)                         0.13       1.53 f
+  XINIT/add_103/U1_1_11/YC (HAX1)                         0.13       1.66 f
+  XINIT/add_103/U1_1_12/YC (HAX1)                         0.13       1.79 f
+  XINIT/add_103/U1_1_13/YC (HAX1)                         0.13       1.92 f
+  XINIT/add_103/U1_1_14/YC (HAX1)                         0.13       2.05 f
+  XINIT/add_103/U1_1_15/YC (HAX1)                         0.15       2.20 f
+  XINIT/add_103/U1/Y (XOR2X1)                             0.10       2.30 r
+  XINIT/add_103/SUM[16] (ddr2_init_engine_DW01_inc_0)     0.00       2.30 r
+  XINIT/U155/Y (NAND2X1)                                  0.05       2.34 f
+  XINIT/U154/Y (OAI21X1)                                  0.06       2.40 r
+  XINIT/counter_reg[16]/D (DFFPOSX1)                      0.00       2.40 r
+  data arrival time                                                  2.40
+
+  clock clk (rise edge)                                   2.60       2.60
+  clock network delay (ideal)                             0.00       2.60
+  XINIT/counter_reg[16]/CLK (DFFPOSX1)                    0.00       2.60 r
+  library setup time                                     -0.17       2.43
+  data required time                                                 2.43
+  --------------------------------------------------------------------------
+  data required time                                                 2.43
+  data arrival time                                                 -2.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

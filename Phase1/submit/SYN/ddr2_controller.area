@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : ddr2_controller
+Version: Y-2006.06-SP4
+Date   : Fri Mar  7 14:54:01 2014
+****************************************
+
+Library(s) Used:
+
+    osu018_stdcells (File: /home/scf-22/ee577/design_pdk/osu_stdcells/lib/tsmc018/lib/osu018_stdcells.db)
+
+Number of ports:              143
+Number of nets:               218
+Number of cells:               24
+Number of references:           9
+
+Combinational area:       589218.000000
+Noncombinational area:    563976.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          1153194.000000
+Total area:                 undefined
+1

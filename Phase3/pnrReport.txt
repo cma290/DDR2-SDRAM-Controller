@@ -1,0 +1,129 @@
+# generated on Wed Apr 16 22:39:32 2014
+# Top Cell: ddr2_init_engine
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  2.234  |  2.234  |  3.800  |  3.804  |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |    0    |   N/A   |   N/A   |
+|          All Paths:|   64    |   40    |    2    |   22    |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
++----------------+---------------------------+--------------+
+|                |            Real           |     Total    |
+|    DRVs        +--------------+------------+--------------|
+|                |Nr nets(terms)| Worst Vio  |Nr nets(terms)|
++----------------+--------------+------------+--------------+
+|   max_cap      |    0 (0)     |   0.000    |    0 (0)     |
+|   max_tran     |    0 (0)     |   0.000    |    0 (0)     |
+|   max_fanout   |    0 (0)     |     0      |    0 (0)     |
++----------------+--------------+------------+--------------+
+
+Density: 70.545%
+Routing Overflow: 0.00% H and 0.08% V
+------------------------------------------------------------
+
+
+# generated on Wed Apr 16 22:56:09 2014
+# Top Cell: ddr2_init_engine
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  0.263  |  0.263  |   N/A   |  1.556  |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |   N/A   |  0.000  |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |   N/A   |    0    |   N/A   |   N/A   |
+|          All Paths:|   62    |   40    |   N/A   |   22    |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
+Density: 71.636%
+Routing Overflow: 0.00% H and 0.20% V
+------------------------------------------------------------
+
+
+
+
+
+#-- Regular Route Type --
+#RouteTypeName regularRoute
+#TopPreferredLayer 4
+#BottomPreferredLayer 3
+#PreferredExtraSpace 1
+#End
+
+#-- Clock Group --
+#ClkGroup
+#+ <clockName>
+
+#------------------------------------------------------------
+# Clock Root   : clk
+# Clock Name   : clk
+# Clock Period : 5ns
+#------------------------------------------------------------
+AutoCTSRootPin clk
+Period         5ns
+MaxDelay       5ns # default value
+MinDelay       0ns   # default value
+MaxSkew        300ps # default value
+SinkMaxTran    400ps # default value
+BufMaxTran     400ps # default value
+
+
+
+
+==============================
+Floorplan/Placement Information
+==============================
+Total area of Standard cells: 11032.000 um^2 
+Total area of Standard cells(Subtracting Physical Cells): 11032.000 um^2 
+Total area of Macros: 0.000 um^2 
+Total area of Blockages: 0.000 um^2 
+Total area of Pad cells: 0.000 um^2 
+Total area of Core: 15460.500 um^2 
+Total area of Chip: 105570.500 um^2 
+Effective Utilization: 7.6458e-01 
+Number of Cell Rows: 11 
+% Pure Gate Density #1 (Subtracting BLOCKAGES): 71.356% 
+% Pure Gate Density #2 (Subtracting BLOCKAGES and Physical Cells): 71.356% 
+% Pure Gate Density #3 (Subtracting MACROS): 71.356% 
+% Pure Gate Density #4 (Subtracting MACROS and Physical Cells): 71.356% 
+% Pure Gate Density #5 (Subtracting MACROS and BLOCKAGES): 71.356% 
+% Pure Gate Density #6 (Subtracting MACROS and BLOCKAGES and Physical Cells): 71.356% 
+% Core Density (Counting Std Cells and MACROs): 71.356% 
+% Core Density #2(Subtracting Physical Cells): 71.356% 
+% Chip Density (Counting Std Cells and MACROs and IOs): 10.450% 
+% Chip Density #2(Subtracting Physical Cells): 10.450% 
+# Macros within 5 sites of IO pad: No 
+Macro halo defined?: No 
+
+==============================
+Wire Length Distribution
+==============================
+Total metal1 wire length: 0.0000 um 
+Total metal2 wire length: 4057.0000 um 
+Total metal3 wire length: 5370.8000 um 
+Total metal4 wire length: 1854.0000 um 
+Total metal5 wire length: 77.6000 um 
+Total metal6 wire length: 0.0000 um 
+Total wire length: 11359.4000 um 
+Average wire length/net: 37.0013 um 
+Area of Power Net Distribution: 
+    ------------------------------
+    Area of Power Net Distribution
+    ------------------------------
+    Layer Name Area of Power Net Routable Area Percentage 
+    metal1 504.0000 15460.5000 3.2599% 
+    metal2 0.0000 15460.5000 0.0000% 
+    metal3 0.0000 15460.5000 0.0000% 
+    metal4 0.0000 15460.5000 0.0000% 
+    metal5 4116.8000 15460.5000 26.6279% 
+    metal6 5448.0000 15460.5000 35.2382% 

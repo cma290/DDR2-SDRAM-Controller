@@ -1,0 +1,71 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'ddr2_controller' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: Timing loop detected. (OPT-150)
+	pro_logic/ring_buffer/F0_reg/CLK pro_logic/ring_buffer/F0_reg/Q pro_logic/ring_buffer/U239/B pro_logic/ring_buffer/U239/Y 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ddr2_controller
+Version: Y-2006.06-SP4
+Date   : Sun Apr  6 17:36:03 2014
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: pro_logic/count_reg[3]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: pro_logic/A_reg[9]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pro_logic/count_reg[3]/CLK (DFFPOSX1)                   0.00 #     0.00 r
+  pro_logic/count_reg[3]/Q (DFFPOSX1)                     0.17       0.17 f
+  pro_logic/U4/Y (INVX2)                                  0.09       0.27 r
+  pro_logic/U68/Y (INVX4)                                 0.09       0.36 f
+  pro_logic/U54/Y (NOR2X1)                                0.10       0.45 r
+  pro_logic/U164/Y (NAND3X1)                              0.08       0.53 f
+  pro_logic/U94/Y (AND2X1)                                0.11       0.64 f
+  pro_logic/U165/Y (NAND3X1)                              0.26       0.90 r
+  pro_logic/U107/Y (AND2X2)                               0.11       1.01 r
+  pro_logic/U108/Y (OR2X2)                                0.14       1.15 r
+  pro_logic/U327/Y (OR2X2)                                0.11       1.26 r
+  pro_logic/U331/Y (NAND2X1)                              0.06       1.32 f
+  pro_logic/U522/Y (OAI21X1)                              0.08       1.40 r
+  pro_logic/U534/Y (NAND3X1)                              0.06       1.47 f
+  pro_logic/U535/Y (NAND2X1)                              0.20       1.67 r
+  pro_logic/U536/Y (INVX2)                                0.08       1.75 f
+  pro_logic/U538/Y (NAND2X1)                              0.17       1.92 r
+  pro_logic/U9/Y (INVX2)                                  0.12       2.04 f
+  pro_logic/U577/Y (AOI22X1)                              0.12       2.16 r
+  pro_logic/U578/Y (NAND3X1)                              0.05       2.20 f
+  pro_logic/U87/Y (INVX1)                                 0.05       2.26 r
+  pro_logic/U579/Y (OAI21X1)                              0.05       2.31 f
+  pro_logic/U34/Y (MUX2X1)                                0.09       2.40 r
+  pro_logic/U581/Y (NAND2X1)                              0.04       2.44 f
+  pro_logic/A_reg[9]/D (DFFPOSX1)                         0.00       2.44 f
+  data arrival time                                                  2.44
+
+  clock CLK (rise edge)                                   2.60       2.60
+  clock network delay (ideal)                             0.00       2.60
+  pro_logic/A_reg[9]/CLK (DFFPOSX1)                       0.00       2.60 r
+  library setup time                                     -0.16       2.44
+  data required time                                                 2.44
+  --------------------------------------------------------------------------
+  data required time                                                 2.44
+  data arrival time                                                 -2.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
